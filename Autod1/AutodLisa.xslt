@@ -91,5 +91,48 @@
 				</tr>
 			</xsl:for-each>
 		</table>
+		
+		<h2>1. Autode ja nende omanike nimekirja väljastamine mis loetleda masinate margid</h2>
+        <table border="1">
+            <tr>
+                <th>Mark</th>
+                <th>Reg Number</th>
+                <th>Omanik</th>
+            </tr>
+            <xsl:for-each select="autod/auto">
+                <tr>
+                    <td><xsl:value-of select="mark"/></td>
+                    <td><xsl:value-of select="registriNumber"/></td>
+                    <td><xsl:value-of select="omanik"/></td>
+                </tr>
+            </xsl:for-each>
+        </table>
+
+		<h2>Autode arv, mille registreerimisnumbris on tähed „A“, „B“, „C“</h2>
+		<table border="1">
+			<tr>
+				<th>Täht</th>
+				<th>Autode arv</th>
+			</tr>
+			<tr>
+				<td>A</td>
+				<td>
+					<xsl:value-of select="count(autod/auto[contains(registriNumber, 'A')])"/>
+				</td>
+			</tr>
+			<tr>
+				<td>B</td>
+				<td>
+					<xsl:value-of select="count(autod/auto[contains(registriNumber, 'B')])"/>
+				</td>
+			</tr>
+			<tr>
+				<td>C</td>
+				<td>
+					<xsl:value-of select="count(autod/auto[contains(registriNumber, 'C')])"/>
+				</td>
+			</tr>
+		</table>
+		
 	</xsl:template>
 </xsl:stylesheet>
