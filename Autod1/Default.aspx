@@ -6,8 +6,6 @@
         <title>xml ja xslt andmete kuvamine</title>
     </head>
     <body>
-        <h1>xml ja xslt andmete kuvamine</h1>
-        <br />
         <div>
             <asp:Xml runat="server"
                 DocumentSource="~/reisimine.xml"
