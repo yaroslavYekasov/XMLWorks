@@ -1,0 +1,392 @@
+<reisimine>
+  <reisid id="1">
+    <sihtkoht>Newman Airport</sihtkoht>
+    <alguskoht>Momeik Airport</alguskoht>
+    <kuupäev>2024-10-28</kuupäev>
+    <pardaleminekuAeg>1:07</pardaleminekuAeg>
+    <hind>510.45</hind>
+    <transport>
+      <tüüp>buss</tüüp>
+    </transport>
+    <firma>
+      <nimi>Yakidoo</nimi>
+    </firma>
+  </reisid>
+  <reisid id="2">
+    <sihtkoht>Sanggata/Sangkimah Airport</sihtkoht>
+    <alguskoht>Louisville Winston County Airport</alguskoht>
+    <kuupäev>2024-10-06</kuupäev>
+    <pardaleminekuAeg>22:28</pardaleminekuAeg>
+    <hind>516.82</hind>
+    <transport>
+      <tüüp>buss</tüüp>
+    </transport>
+    <firma>
+      <nimi>Zoomlounge</nimi>
+    </firma>
+  </reisid>
+  <reisid id="3">
+    <sihtkoht>Monaco Heliport</sihtkoht>
+    <alguskoht>Viveros Island Airport</alguskoht>
+    <kuupäev>2024-11-17</kuupäev>
+    <pardaleminekuAeg>8:35</pardaleminekuAeg>
+    <hind>522.89</hind>
+    <transport>
+      <tüüp>buss</tüüp>
+    </transport>
+    <firma>
+      <nimi>Jayo</nimi>
+    </firma>
+  </reisid>
+  <reisid id="4">
+    <sihtkoht>Khoram Abad Airport</sihtkoht>
+    <alguskoht>Al Thaurah Airport</alguskoht>
+    <kuupäev>2024-10-18</kuupäev>
+    <pardaleminekuAeg>18:39</pardaleminekuAeg>
+    <hind>208.20</hind>
+    <transport>
+      <tüüp>rong</tüüp>
+    </transport>
+    <firma>
+      <nimi>Rhyloo</nimi>
+    </firma>
+  </reisid>
+  <reisid id="5">
+    <sihtkoht>Marina Municipal Airport</sihtkoht>
+    <alguskoht>Immokalee Regional Airport</alguskoht>
+    <kuupäev>2024-09-13</kuupäev>
+    <pardaleminekuAeg>10:12</pardaleminekuAeg>
+    <hind>596.30</hind>
+    <transport>
+      <tüüp>buss</tüüp>
+    </transport>
+    <firma>
+      <nimi>Blognation</nimi>
+    </firma>
+  </reisid>
+  <reisid id="6">
+    <sihtkoht>Marawaka Airport</sihtkoht>
+    <alguskoht>Porto Seguro Airport</alguskoht>
+    <kuupäev>2024-11-16</kuupäev>
+    <pardaleminekuAeg>3:31</pardaleminekuAeg>
+    <hind>528.54</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>Vinder</nimi>
+    </firma>
+  </reisid>
+  <reisid id="7">
+    <sihtkoht>Owensboro Daviess County Airport</sihtkoht>
+    <alguskoht>Anuha Island Resort Airport</alguskoht>
+    <kuupäev>2024-11-21</kuupäev>
+    <pardaleminekuAeg>15:32</pardaleminekuAeg>
+    <hind>692.61</hind>
+    <transport>
+      <tüüp>lennuk</tüüp>
+    </transport>
+    <firma>
+      <nimi>Vipe</nimi>
+    </firma>
+  </reisid>
+  <reisid id="8">
+    <sihtkoht>Concord Municipal Airport</sihtkoht>
+    <alguskoht>Lackland Air Force Base</alguskoht>
+    <kuupäev>2024-09-11</kuupäev>
+    <pardaleminekuAeg>3:16</pardaleminekuAeg>
+    <hind>485.94</hind>
+    <transport>
+      <tüüp>lennuk</tüüp>
+    </transport>
+    <firma>
+      <nimi>Youspan</nimi>
+    </firma>
+  </reisid>
+  <reisid id="9">
+    <sihtkoht>Aiyura Airport</sihtkoht>
+    <alguskoht>Zielona Góra-Babimost Airport</alguskoht>
+    <kuupäev>2024-11-06</kuupäev>
+    <pardaleminekuAeg>20:36</pardaleminekuAeg>
+    <hind>596.30</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>Tagtune</nimi>
+    </firma>
+  </reisid>
+  <reisid id="10">
+    <sihtkoht>Leonora Airport</sihtkoht>
+    <alguskoht>Amery Municipal Airport</alguskoht>
+    <kuupäev>2024-09-11</kuupäev>
+    <pardaleminekuAeg>17:16</pardaleminekuAeg>
+    <hind>174.76</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>Skipstorm</nimi>
+    </firma>
+  </reisid>
+  <reisid id="11">
+    <sihtkoht>Bushehr Airport</sihtkoht>
+    <alguskoht>Lins Airport</alguskoht>
+    <kuupäev>2024-10-23</kuupäev>
+    <pardaleminekuAeg>11:43</pardaleminekuAeg>
+    <hind>455.97</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>BlogXS</nimi>
+    </firma>
+  </reisid>
+  <reisid id="12">
+    <sihtkoht>OR Tambo International Airport</sihtkoht>
+    <alguskoht>Elliot Lake Municipal Airport</alguskoht>
+    <kuupäev>2024-11-20</kuupäev>
+    <pardaleminekuAeg>17:32</pardaleminekuAeg>
+    <hind>337.71</hind>
+    <transport>
+      <tüüp>lennuk</tüüp>
+    </transport>
+    <firma>
+      <nimi>Skimia</nimi>
+    </firma>
+  </reisid>
+  <reisid id="13">
+    <sihtkoht>Beersheba (Teyman) Airport</sihtkoht>
+    <alguskoht>Tadoule Lake Airport</alguskoht>
+    <kuupäev>2024-10-21</kuupäev>
+    <pardaleminekuAeg>18:18</pardaleminekuAeg>
+    <hind>307.23</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>Oozz</nimi>
+    </firma>
+  </reisid>
+  <reisid id="14">
+    <sihtkoht>Port Harcourt City Airport</sihtkoht>
+    <alguskoht>Kannur International Airport</alguskoht>
+    <kuupäev>2024-11-27</kuupäev>
+    <pardaleminekuAeg>17:24</pardaleminekuAeg>
+    <hind>509.38</hind>
+    <transport>
+      <tüüp>buss</tüüp>
+    </transport>
+    <firma>
+      <nimi>Youbridge</nimi>
+    </firma>
+  </reisid>
+  <reisid id="15">
+    <sihtkoht>Galcaio Airport</sihtkoht>
+    <alguskoht>Emmonak Airport</alguskoht>
+    <kuupäev>2024-10-19</kuupäev>
+    <pardaleminekuAeg>14:09</pardaleminekuAeg>
+    <hind>253.65</hind>
+    <transport>
+      <tüüp>buss</tüüp>
+    </transport>
+    <firma>
+      <nimi>Twitterwire</nimi>
+    </firma>
+  </reisid>
+  <reisid id="16">
+    <sihtkoht>Middlemount Airport</sihtkoht>
+    <alguskoht>Caleta Olivia Airport</alguskoht>
+    <kuupäev>2024-11-04</kuupäev>
+    <pardaleminekuAeg>8:20</pardaleminekuAeg>
+    <hind>601.56</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>Blogspan</nimi>
+    </firma>
+  </reisid>
+  <reisid id="17">
+    <sihtkoht>Kengtung Airport</sihtkoht>
+    <alguskoht>Trompeteros Airport</alguskoht>
+    <kuupäev>2024-09-06</kuupäev>
+    <pardaleminekuAeg>11:17</pardaleminekuAeg>
+    <hind>417.84</hind>
+    <transport>
+      <tüüp>buss</tüüp>
+    </transport>
+    <firma>
+      <nimi>Yakitri</nimi>
+    </firma>
+  </reisid>
+  <reisid id="18">
+    <sihtkoht>Brown Field Municipal Airport</sihtkoht>
+    <alguskoht>Boolgeeda</alguskoht>
+    <kuupäev>2024-11-21</kuupäev>
+    <pardaleminekuAeg>10:11</pardaleminekuAeg>
+    <hind>110.71</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>Quimba</nimi>
+    </firma>
+  </reisid>
+  <reisid id="19">
+    <sihtkoht>Westport Airport</sihtkoht>
+    <alguskoht>Baitadi Airport</alguskoht>
+    <kuupäev>2024-11-14</kuupäev>
+    <pardaleminekuAeg>16:52</pardaleminekuAeg>
+    <hind>184.66</hind>
+    <transport>
+      <tüüp>rong</tüüp>
+    </transport>
+    <firma>
+      <nimi>Demimbu</nimi>
+    </firma>
+  </reisid>
+  <reisid id="20">
+    <sihtkoht>Tweed New Haven Airport</sihtkoht>
+    <alguskoht>Mc Connell Air Force Base</alguskoht>
+    <kuupäev>2024-10-08</kuupäev>
+    <pardaleminekuAeg>4:18</pardaleminekuAeg>
+    <hind>235.51</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>Tekfly</nimi>
+    </firma>
+  </reisid>
+  <reisid id="21">
+    <sihtkoht>Amgu Airport</sihtkoht>
+    <alguskoht>San Luis Río Colorado Airport</alguskoht>
+    <kuupäev>2024-09-05</kuupäev>
+    <pardaleminekuAeg>22:06</pardaleminekuAeg>
+    <hind>371.59</hind>
+    <transport>
+      <tüüp>rong</tüüp>
+    </transport>
+    <firma>
+      <nimi>Tagtune</nimi>
+    </firma>
+  </reisid>
+  <reisid id="22">
+    <sihtkoht>Enrique Malek International Airport</sihtkoht>
+    <alguskoht>Debrecen International Airport</alguskoht>
+    <kuupäev>2024-11-25</kuupäev>
+    <pardaleminekuAeg>1:42</pardaleminekuAeg>
+    <hind>321.26</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>Kare</nimi>
+    </firma>
+  </reisid>
+  <reisid id="23">
+    <sihtkoht>Hunter Army Air Field</sihtkoht>
+    <alguskoht>Gulkana Airport</alguskoht>
+    <kuupäev>2024-11-22</kuupäev>
+    <pardaleminekuAeg>3:19</pardaleminekuAeg>
+    <hind>116.19</hind>
+    <transport>
+      <tüüp>lennuk</tüüp>
+    </transport>
+    <firma>
+      <nimi>Edgeify</nimi>
+    </firma>
+  </reisid>
+  <reisid id="24">
+    <sihtkoht>Lake Charles Regional Airport</sihtkoht>
+    <alguskoht>Tamarindo Airport</alguskoht>
+    <kuupäev>2024-10-23</kuupäev>
+    <pardaleminekuAeg>1:03</pardaleminekuAeg>
+    <hind>626.39</hind>
+    <transport>
+      <tüüp>lennuk</tüüp>
+    </transport>
+    <firma>
+      <nimi>Fiveclub</nimi>
+    </firma>
+  </reisid>
+  <reisid id="25">
+    <sihtkoht>Benin Airport</sihtkoht>
+    <alguskoht>Kasos Airport</alguskoht>
+    <kuupäev>2024-09-19</kuupäev>
+    <pardaleminekuAeg>23:10</pardaleminekuAeg>
+    <hind>233.26</hind>
+    <transport>
+      <tüüp>laev</tüüp>
+    </transport>
+    <firma>
+      <nimi>Kayveo</nimi>
+    </firma>
+  </reisid>
+  <reisid id="26">
+    <sihtkoht>Telegraph Creek Airport</sihtkoht>
+    <alguskoht>Penn Valley Airport</alguskoht>
+    <kuupäev>2024-11-12</kuupäev>
+    <pardaleminekuAeg>17:37</pardaleminekuAeg>
+    <hind>294.48</hind>
+    <transport>
+      <tüüp>buss</tüüp>
+    </transport>
+    <firma>
+      <nimi>Geba</nimi>
+    </firma>
+  </reisid>
+  <reisid id="27">
+    <sihtkoht>Gibb River Airport</sihtkoht>
+    <alguskoht>Oyo Ollombo Airport</alguskoht>
+    <kuupäev>2024-10-16</kuupäev>
+    <pardaleminekuAeg>22:50</pardaleminekuAeg>
+    <hind>675.79</hind>
+    <transport>
+      <tüüp>lennuk</tüüp>
+    </transport>
+    <firma>
+      <nimi>Feednation</nimi>
+    </firma>
+  </reisid>
+  <reisid id="28">
+    <sihtkoht>Lusambo Airport</sihtkoht>
+    <alguskoht>Atizapan De Zaragoza Airport</alguskoht>
+    <kuupäev>2024-11-26</kuupäev>
+    <pardaleminekuAeg>1:51</pardaleminekuAeg>
+    <hind>584.11</hind>
+    <transport>
+      <tüüp>lennuk</tüüp>
+    </transport>
+    <firma>
+      <nimi>Eabox</nimi>
+    </firma>
+  </reisid>
+  <reisid id="29">
+    <sihtkoht>Bisho Airport</sihtkoht>
+    <alguskoht>Buin Airport</alguskoht>
+    <kuupäev>2024-11-07</kuupäev>
+    <pardaleminekuAeg>18:11</pardaleminekuAeg>
+    <hind>222.02</hind>
+    <transport>
+      <tüüp>buss</tüüp>
+    </transport>
+    <firma>
+      <nimi>Edgepulse</nimi>
+    </firma>
+  </reisid>
+  <reisid id="30">
+    <sihtkoht>Crane Island Airstrip</sihtkoht>
+    <alguskoht>Almirante Padilla Airport</alguskoht>
+    <kuupäev>2024-10-05</kuupäev>
+    <pardaleminekuAeg>20:10</pardaleminekuAeg>
+    <hind>499.79</hind>
+    <transport>
+      <tüüp>lennuk</tüüp>
+    </transport>
+    <firma>
+      <nimi>Flipstorm</nimi>
+    </firma>
+  </reisid>
+</reisimine>
