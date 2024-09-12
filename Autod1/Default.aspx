@@ -10,8 +10,8 @@
         <br />
         <div>
             <asp:Xml runat="server"
-                DocumentSource="~/Autod.xml"
-                TransformSource="~/AutodLisa.xslt"/>
+                DocumentSource="~/reisimine.xml"
+                TransformSource="~/reisimine.xslt"/>
         </div>
     </body>
 </html>
