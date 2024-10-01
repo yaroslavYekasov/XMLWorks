@@ -14,8 +14,8 @@
 			Sorteeri kõik reisid hinna järgi.<br/>
 			Kuva kõik xml andmed tabelina, kus read on üle rea erineva värviga.
 		</h3>
-		
-		<xsl:apply-templates select="Reisid/Reis">
+
+		<xsl:apply-templates select="Reisid/Reis[contains(Transport/Viis, 'Taxi')]">
 			<xsl:sort select="Majutus/@Hind" data-type="number" order="ascending"/>
 		</xsl:apply-templates>
 	</xsl:template>
@@ -66,7 +66,7 @@
 
 	<!-- Filter: Näita ainult reise, mille transpordiks on takso -->
 	<xsl:template match="/">
-		<h2>Trips with Taxi</h2>
+		<h2>Reisid Taksoga</h2>
 		<table border="1" cellspacing="0" cellpadding="5">
 			<thead>
 				<tr style="background-color: lightgray;">
