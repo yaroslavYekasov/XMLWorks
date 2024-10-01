@@ -1,111 +1,126 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl"
->
-    <xsl:output method="html" indent="yes" encoding="utf-8"/>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
+	<xsl:output method="html" indent="yes" encoding="utf-8"/>
 
-    <xsl:template match="@* | node()">
-		<style>
-			body { font-family: Papyrus, fantasy; color: black; }
-			h1 {
-			background-color: lightcoral; /* parandatud light-red -> lightcoral */
-			padding: 5px;
-			border-radius: 10px;
-			width: 50%;
-			}
+	<!-- Sorteeri reisid majutuskulude järgi -->
+	<xsl:template match="/">
+		<h3>
+			Kuvada iga reisi sihtkoht pealkirjana, kasutades h1. <br/>
+			Komponendid peavad olema kuvatud täpploeteluna (ul). <br/>
+			Kolmanda taseme struktuuri andmed tuleb kuvada kollasel taustal. <br/>
+			Oma tingimus, hind on kõrgem kui 2000€ on punane. <br/>
+			Kuva iga reisi kogumaksumuse. <br/>
+			Filtreeri ja kuva ainult need reisid, mille transport on taxi. <br/>
+			Sorteeri kõik reisid hinna järgi.<br/>
+			Kuva kõik xml andmed tabelina, kus read on üle rea erineva värviga.
+		</h3>
+		
+		<xsl:apply-templates select="Reisid/Reis">
+			<xsl:sort select="Majutus/@Hind" data-type="number" order="ascending"/>
+		</xsl:apply-templates>
+	</xsl:template>
 
-		</style>
-		<h2>Works</h2>
-				<xsl:for-each select="reisid[transport/tüüp = 'lennuk']">
-					<h1>
-						<xsl:value-of select="sihtkoht"/>
-					</h1>
-					<ul>
-						<li>
-							Alguskoht: <xsl:value-of select="alguskoht"/>
-						</li>
-						<li>
-							Kuupäev: <xsl:value-of select="kuupäev"/>
-						</li>
-						<li>
-							Pardalemineku aeg: <xsl:value-of select="pardaleminekuAeg"/>
-						</li>
-						<li>
-							Transport: <xsl:value-of select="transport/tüüp"/>
-						</li>
-						<li style="background-color: yellow; width: 300px; border-radius: 10px; padding: 2px;">
-							Firma: <xsl:value-of select="firma/nimi"/>
-						</li>
+	<!-- Iga reisi peamine mall -->
+	<xsl:template match="Reis">
+		<h1>
+			<xsl:value-of select="Sihtkoht"/>
+		</h1>
 
-						<xsl:if  test="number(hind) &gt; 500">
-							<li style="background-color: red; width: 300px; border-radius: 10px; padding: 2px;">
-								Hind: <xsl:value-of select="hind"/>
-							</li>
-						</xsl:if>
-					</ul>
-				</xsl:for-each>
-		
-		
-		
-				<tr>
-					<td>Sum</td>
-					<td>
-						<xsl:value-of select="sum(reisimine/reisid/hind)" />
-					</td>
+		<ul>
+			<li>
+				Transport:
+				<ul>
+					<li>
+						Lennujaam: <span style="background-color: yellow;">
+							<xsl:value-of select="Transport/Lennujaam"/>
+						</span>
+					</li>
+					<li>
+						Viis: <span style="background-color: yellow;">
+							<xsl:value-of select="Transport/Viis"/>
+						</span>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Majutus: <xsl:value-of select="Majutus"/> (Hind: <xsl:value-of select="Majutus/@Hind"/> €)
+			</li>
+			<li>
+				Kestus: <xsl:value-of select="Kestus"/> päeva
+			</li>
+			<li>
+				Tegevused: <xsl:value-of select="Tegevused"/>
+			</li>
+		</ul>
+
+		<xsl:choose>
+			<xsl:when test="Majutus/@Hind &gt; 2000">
+				<p style="color: red;">Kallis Reis: Selle reisi hind on kõrgem kui 2000€</p>
+			</xsl:when>
+		</xsl:choose>
+
+		<p>
+			Kogumaksumus: <xsl:value-of select="Majutus/@Hind"/> €
+		</p>
+	</xsl:template>
+
+	<!-- Filter: Näita ainult reise, mille transpordiks on takso -->
+	<xsl:template match="/">
+		<h2>Trips with Taxi</h2>
+		<table border="1" cellspacing="0" cellpadding="5">
+			<thead>
+				<tr style="background-color: lightgray;">
+					<th>Sihtkoht</th>
+					<th>Lennujaam</th>
+					<th>Viis</th>
+					<th>Majutus</th>
+					<th>Hind (€)</th>
+					<th>Kestus (päeva)</th>
+					<th>Tegevused</th>
 				</tr>
-				<tr>
-					<td>Count</td>
-					<td>
-						<xsl:value-of select="count(reisimine/reisid/hind)" />
-					</td>
-				</tr>
+			</thead>
+			<tbody>
+				<xsl:apply-templates select="Reisid/Reis[contains(Transport/Viis, 'Taxi')]">
+					<xsl:sort select="Majutus/@Hind" data-type="number" order="ascending"/>
+				</xsl:apply-templates>
+			</tbody>
+		</table>
+	</xsl:template>
 
-				<tr>
-					<td>Average</td>
-					<td>
-						<xsl:value-of
-							select="sum(reisimine/reisid/hind) div count(reisimine/reisid/hind)" />
-					</td>
-				</tr>
-		
-		
-		
-				<table>
-					<thead>
-						<tr>
-							<th>Reisi ID</th>
-							<th>Sihtkoht</th>
-							<th>Alguskoht</th>
-							<th>Hind</th>
-							<th>Transport</th>
-							<th>Reisifirma</th>
-						</tr>
-					</thead>
-					<tbody>
-						<xsl:for-each select="reisid[transport/tüüp = 'lennuk']">
-							<xsl:sort select="hind" data-type="number"/>
-							<tr>
-								<td>
-									<xsl:value-of select="@id"/>
-								</td>
-								<td>
-									<xsl:value-of select="sihtkoht"/>
-								</td>
-								<td>
-									<xsl:value-of select="alguskoht"/>
-								</td>
-								<td>
-									<xsl:value-of select="hind"/>
-								</td>
-								<td>
-									<xsl:value-of select="transport/tüüp"/>
-								</td>
-								<td>
-									<xsl:value-of select="firma/nimi"/>
-								</td>
-							</tr>
-						</xsl:for-each>
-					</tbody>
-				</table>
-    </xsl:template>
+	<!-- Vahelduvad reavärvid tabelis -->
+	<xsl:template match="Reis">
+		<xsl:variable name="rowColor" select="position() mod 2 = 0"/>
+		<tr>
+			<xsl:attribute name="style">
+				<xsl:choose>
+					<xsl:when test="$rowColor">background-color: lightyellow;</xsl:when>
+					<xsl:otherwise>background-color: white;</xsl:otherwise>
+				</xsl:choose>
+			</xsl:attribute>
+			<td>
+				<xsl:value-of select="Sihtkoht"/>
+			</td>
+			<td>
+				<xsl:value-of select="Transport/Lennujaam"/>
+			</td>
+			<td>
+				<xsl:value-of select="Transport/Viis"/>
+			</td>
+			<td>
+				<xsl:value-of select="Majutus"/>
+			</td>
+			<td>
+				<xsl:value-of select="Majutus/@Hind"/>
+			</td>
+			<td>
+				<xsl:value-of select="Kestus"/>
+			</td>
+			<td>
+				<xsl:value-of select="Tegevused"/>
+			</td>
+		</tr>
+	</xsl:template>
+
+
+
 </xsl:stylesheet>

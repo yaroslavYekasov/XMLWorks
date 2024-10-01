@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Reisid">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Reis" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Sihtkoht" type="xs:string"/>
+							<xs:element name="Transport">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Lennujaam" type="xs:string"/>
+										<xs:element name="Viis" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Majutus">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="Hind" type="xs:decimal" use="required"/>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Kestus" type="xs:int"/>
+							<xs:element name="Tegevused" type="xs:string"/>
+						</xs:sequence>
+						<xs:attribute name="ID" type="xs:int" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>
