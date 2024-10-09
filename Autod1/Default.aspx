@@ -8,8 +8,8 @@
     <body>
         <div>
             <asp:Xml runat="server"
-                DocumentSource="~/reisimine.xml"
-                TransformSource="~/reisimine.xslt"/>
+                DocumentSource="~/Reisid/reisimine.xml"
+                TransformSource="~/Reisid/reisimine.xslt"/>
         </div>
     </body>
 </html>
